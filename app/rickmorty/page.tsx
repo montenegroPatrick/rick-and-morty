@@ -7,7 +7,7 @@ import { Characters } from "@/lib/types/characters";
 export default async function RickAndMortyPage() {
   const data: Characters | string = await getCharacters(1);
   if (!data || typeof data === "string") {
-    return <div>Error: {data}</div>;
+    throw new Error(data);
   }
 
   const { results, info } = data;

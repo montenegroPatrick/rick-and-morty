@@ -20,7 +20,7 @@ export default async function CharacterDetail({
 
   if (!data || typeof data === "string") {
     return (
-      <div className="min-h-screen flex items-center justify-center ">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-8 text-center max-w-sm">
           <p className="text-red-400 font-semibold text-lg">Erreur</p>
           <p className="text-gray-500 text-sm mt-2">
@@ -34,12 +34,12 @@ export default async function CharacterDetail({
   const episodeCount = data.episode.length;
 
   return (
-    <div className="min-h-screen ">
-      <div className="w-full  flex h-full gap-6 text-white">
-        <div className="relative w-1/2 h-full ">
+    <div className="min-h-screen">
+      <div className="w-full flex h-full gap-6 text-white">
+        <div className="relative w-1/2 h-full">
           <div className="relative">
             <img
-              className="w-full object-cover "
+              className="w-full object-cover"
               src={data.image}
               alt={data.name}
             />
